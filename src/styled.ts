@@ -1,6 +1,186 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Thin.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Thin.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Thin.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Thin.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-ThinItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-ThinItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-ThinItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-ThinItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraLight.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraLight.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraLight.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraLight.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraLightItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraLightItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraLightItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraLightItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Light.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Light.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Light.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Light.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-LightItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-LightItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-LightItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-LightItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Regular.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Regular.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Regular.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Italic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Italic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Italic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Medium.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Medium.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Medium.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-MediumItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-MediumItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-MediumItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-MediumItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-SemiBold.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-SemiBold.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-SemiBold.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-SemiBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-SemiBoldItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-SemiBoldItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-SemiBoldItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-SemiBoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Bold.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Bold.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Bold.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-BoldItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-BoldItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-BoldItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraBold.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraBold.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraBold.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraBoldItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraBoldItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraBoldItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-ExtraBoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-Black.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-Black.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-Black.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-Black.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-Black.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('fonts/SairaCondensed/SairaCondensed-BlackItalic.eot');
+	src: url('fonts/SairaCondensed/SairaCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SairaCondensed/SairaCondensed-BlackItalic.woff2') format('woff2'),
+		 url('fonts/SairaCondensed/SairaCondensed-BlackItalic.woff') format('woff'),
+		 url('fonts/SairaCondensed/SairaCondensed-BlackItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 900;
+}
 * {
     box-sizing: border-box;
 }
@@ -23,7 +203,9 @@ const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: "Saira Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     };
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
