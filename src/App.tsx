@@ -4,14 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import styled from "styled-components";
 
-import Wave from "./images/wave.svg";
-
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
   background: #000;
-  overflow: hidden;
 `;
 
 const TwinkleBox = styled.div`
@@ -45,51 +42,6 @@ const Button = styled(motion.button)`
   font-size: 20px;
   border: 0;
   border-radius: 0;
-  background-color: #015871;
-`;
-
-const Waves = styled.div`
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
-  & > div {
-    background-image: url(${Wave});
-    background-repeat: repeat-x;
-    position: absolute;
-    top: -198px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-    & + div {
-      top: -175px;
-      animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
-        swell 7s ease -1.25s infinite;
-      opacity: 1;
-    }
-  }
-
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
-  }
-
-  @keyframes swell {
-    0%,
-    100% {
-      transform: translate3d(0, -25px, 0);
-    }
-    50% {
-      transform: translate3d(0, 5px, 0);
-    }
-  }
 `;
 
 const App = () => {
@@ -111,22 +63,11 @@ const App = () => {
 
         <Button
           initial={{
-            color: "#1c95b9",
-            scale: 0.2,
-            borderRadius: "100%",
-          }}
-          animate={{
-            color: "#1c95b9",
-            scale: 0.3,
-            backgroundColor: "#1c95b9",
-          }}
-          whileHover={{
-            marginTop: 30,
             color: "#fff",
-            scale: 1.2,
-            rotate: 0,
-            backgroundColor: "#1c95b9",
+            scale: 0.2,
+            rotate: 90,
           }}
+          whileHover={{ color: "#000", scale: 1.2, rotate: 0 }}
           whileTap={{
             scale: 0.8,
             rotate: -90,
@@ -136,10 +77,6 @@ const App = () => {
           ENTER
         </Button>
       </TwinkleBox>
-      <Waves>
-        <div></div>
-        <div></div>
-      </Waves>
     </Wrapper>
   );
 };
